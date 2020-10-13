@@ -20,7 +20,7 @@ GJSG [2 Source file basics](https://google.github.io/styleguide/javaguide.html#s
 
 GJSG [3 Source file structure](https://google.github.io/styleguide/javaguide.html#s3-source-file-structure) is normative, with the amendments below.
 
-#### Ordering of class contents
+### Ordering of class contents
 
 GJSG [3.4.2 Ordering of class contents](https://google.github.io/styleguide/javaguide.html#s3.4.2-ordering-class-contents):
 
@@ -52,7 +52,7 @@ In concept, we agree with the above. However, we require more predictable struct
 
 GJSG [4 Formatting](https://google.github.io/styleguide/javaguide.html#s4-formatting) is normative, with the amendments below.
 
-#### Vertical whitespace
+### Vertical whitespace
 
 GJSG [4.6.1 Vertical whitespace](https://google.github.io/styleguide/javaguide.html#s4.6.1-vertical-whitespace):
 
@@ -64,7 +64,7 @@ We constrain the use of vertical whitespace further with these rules:
 
 3. Consecutive blank lines are **not permitted** _inside the body_ of an initializer, constructor, or method.
 
-#### Grouping parentheses 
+### Grouping parentheses 
 
 GJSG [4.7 Grouping parentheses: recommended](https://google.github.io/styleguide/javaguide.html#s4.7-grouping-parentheses):
 
@@ -74,7 +74,7 @@ To the above, we add this strict rule:
 
 1. Though the compiler treats parentheses around a _single lambda parameter_ as optional, they are **required** in this bootcamp.
 
-#### `switch` statements
+### `switch` statements
 
 GJSG [4.8.4.3 The `default` case is present](https://google.github.io/styleguide/javaguide.html#s4.8.4.3-switch-default):
 
@@ -139,7 +139,7 @@ For this bootcamp, the above are further constrained:
 
 GJSG [6 Programming Practices](https://google.github.io/styleguide/javaguide.html#s6-programming-practices) is normative, with the amendments below.
 
-#### Types
+### Types
 
 1. If a non-`static` field is intended to act as a non-compound primary key value of a persistent instance (e.g a field annotated with `@PrimaryKey` in an entity class), the type of the field **must be** one of:
 
@@ -149,7 +149,7 @@ GJSG [6 Programming Practices](https://google.github.io/styleguide/javaguide.htm
 
     Though the type selected _should_ be independent of the RDBMS being used, this is not always possible. For example, when using SQLite, the most performant choice (by far) for  the type of a field intended for use as a non-compound primary key value is `long` or `Long`.
      
-#### Access level modifiers
+### Access level modifiers
 
 1. Class members are declared at the _lowest practical access level_.
 
@@ -159,7 +159,7 @@ GJSG [6 Programming Practices](https://google.github.io/styleguide/javaguide.htm
 
 4. _Prefer_ `protected` accessors and mutators to `protected` fields.
 
-#### `if`-`else if` ladders
+### `if`-`else if` ladders
 
 1. An `if`-`else if` statement ladder _should_ include a final `else`, _especially_ when one or more of the following holds:
 
@@ -173,7 +173,7 @@ GJSG [6 Programming Practices](https://google.github.io/styleguide/javaguide.htm
 
 GJSG [7 Javadoc](https://google.github.io/styleguide/javaguide.html#s7-javadoc) is normative, with the amendments below.
 
-#### Where Javadoc is used
+### Where Javadoc is used
 
 GJSC [7.3.1 Exception: self-explanatory methods](https://google.github.io/styleguide/javaguide.html#s7.3.1-javadoc-exception-self-explanatory):
 

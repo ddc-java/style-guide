@@ -400,16 +400,18 @@ The rules below _do not apply_ when a SQL statement expression is generated auto
 
     Note: In some cases, a correlated subquery can't be avoided without complicating the code significantly. However, _almost never_ does this happen outside of a `JOIN`. In other words, we're using the correlated subquery to define a table source used in the join. This use of a correlated subquery---as a participant in a `JOIN`, rather than instead of a `JOIN`---is permitted, but _should be avoided when possible._
     
-## Table &amp; view aliases
+### Table &amp; view aliases
 
-1. Aliases **must be** used in multi-table `FROM` clauses---that is, in all join expressions.
+1. Table/view aliases **must be** used in multi-table `FROM` clauses---that is, in all join expressions.
 
-2. The alias **must be** declared using the `AS` keyword.
+2. The `AS` keyword **must be** used when declaring an alias.
 
-3. Aliases _should be_ constructed from initialisms for the correlated table or view name. For example, an alias for a table named `user_profile` would be named `up`, while an alias for `building_location_detail` would be `bld`.
+3. Table/view aliases _should be_ constructed from initialisms for the correlated table or view name. For example, an alias for a table named `user_profile` would be named `up`, while an alias for `building_location_detail` would be `bld`.
 
 4. If a given table is included 2 or more times in a join expression, **all** of its aliases **must be** numbered---e.g. `bld1`, `bld2`. (Underscores _may be_ used between the initialism and the number: `bld_1`, `bld_2`; as usual, consistency is _strongly_ advised.)
 
 ### Column aliases
 
 1. A column alias **must be** used whenever an item in a query select list is a computed expression, rather than a simple column name.
+
+2. The `AS` keyword **must be** used when declaring a column alias.

@@ -20,17 +20,17 @@ order: 50
 
 ## Formatting tools
 
-### Integrated
+#### Integrated
 
 * [`intellij-java-google-style.xml`](https://raw.githubusercontent.com/google/styleguide/gh-pages/intellij-java-google-style.xml) (<https://raw.githubusercontent.com/google/styleguide/gh-pages/intellij-java-google-style.xml>)
 
     Part of the [Google Style Guide repository](https://github.com/google/styleguide), this is a style scheme that can be imported into IntelliJ IDEA, providing extensive formatting support for Java source files, as well as less comprehensive support for XML and JSON formatting.
 
-### Online
+#### Online
 
 The tools listed here produce (with some configuration) formatted code that is fully conformant with the rules in this style guide. However, the recommended tool for this purpose is the IntelliJ IDEA **Code/Format Code** command.
 
-#### SQL
+###### SQL
 
 * [Code Beautify: SQL Formatter](https://codebeautify.org/sqlformatter) (<https://codebeautify.org/sqlformatter>)
 
@@ -40,7 +40,7 @@ The tools listed here produce (with some configuration) formatted code that is f
 
 * [SQLFormat](https://sqlformat.org/) (<https://sqlformat.org/>)
 
-#### JSON
+###### JSON
 
 * [Code Beautify: JSON Viewer](https://codebeautify.org/jsonviewer) (<https://codebeautify.org/jsonviewer>)
 
@@ -50,4 +50,4 @@ The tools listed here produce (with some configuration) formatted code that is f
 
 ## PDF version
 
-* [Deep Dive Coding Java + Android Bootcamp Style Guide]({{ /assets/pdf/DDC Java+Android style guide.pdf | relative_url }})
+* [Deep Dive Coding Java + Android Bootcamp Style Guide]({{ "/assets/pdf/DDC Java+Android style guide.pdf" | relative_url }})

@@ -110,3 +110,8 @@ To the extent that XML is used for project definition, configuration, or source 
 
 9. When an element has a closing tag, and that closing tag is not on the same line as the opening tag, the closing tag **must be** indented to the same level as the opening tag.
 
+10. **Do not** include whitespace around the equal sign between an attribute name and its value.
+
+11. There _should not_ be  any whitespace immediately preceding the closing angle bracket of an element's opening or closing tag.
+
+12. In a self-closing tag, there _may_ be whitespace preceding the self-closing token (`/>`); any such whitespace _should be_ kept to a minimum, and just for the purpose of improving readability.

@@ -48,3 +48,6 @@ The tools listed here produce (with some configuration) formatted code that is f
 
 * [JSON Formatter &amp; Validator](https://jsonformatter.curiousconcept.com/) (<https://jsonformatter.curiousconcept.com/>)
 
+## PDF version
+
+* [Deep Dive Coding Java + Android Bootcamp Style Guide]({{ /assets/pdf/DDC Java+Android style guide.pdf | relative_url }})

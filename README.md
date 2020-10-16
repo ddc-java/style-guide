@@ -4,7 +4,7 @@
 
 A style guide for Java, SQL, XML, and JSON, to be followed in the [Deep Dive Coding](https://deepdivecoding.com/) [Java + Android bootcamp](https://deepdivecoding.com/java-android/).
 
-For details, see [docs](docs/).
+The style guide is published at <https://ddc-java.github.io/style-guide>.
 
 ## Credits &amp; copyright
 

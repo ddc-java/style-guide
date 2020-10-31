@@ -28,13 +28,9 @@ On the other hand, beyond newline and indentation rules, this style guide doesn'
 
 ## Casing
 
-### Keywords &amp; built-in functions
-
 1. SQL keywords (including the names of built-in functions) **must be** written in `UPPERCASE`. (In some SQL dialects, some multi-word keywords have underscores; these would be written in `UPPER_SNAKE_CASE`.)
 
-### Identifiers
-
-1. All explicitly named persistent or transient SQL objects (tables, views, columns, aliases, indices, sequences, stored procedures, user-defined functions) **must be** named using `lower_snake_case`. 
+2. All explicitly named persistent or transient SQL objects (tables, views, columns, aliases, indices, sequences, stored procedures, user-defined functions) **must be** named using `lower_snake_case`. 
 
 ## Naming
 

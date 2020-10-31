@@ -4,6 +4,12 @@ menu: Introduction
 order: 0
 ---
 
+*[GJSG]: Google Java Style Guide
+*[JSON]: JavaScript Object Notation
+*[XML]: Extensible Markup Language
+*[ORM]: object-relation mapping
+*[SSG]: SQL Style Guide
+
 ## Purpose
 
 This document serves as the complete  definition of the Deep Dive Coding Java + Android Bootcamp standards for Java and SQL source code, as well as XML and JSON documents. A Java, SQL, XML, or JSON source file may be described as being  "in DDC Java + Android Style" **if and only** if it adheres to the rules stated or referenced herein.

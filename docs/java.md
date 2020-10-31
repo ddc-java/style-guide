@@ -4,11 +4,15 @@ menu: Java
 order: 10
 ---
 
+*[GJSG]: Google Java Style Guide
+*[JSON]: JavaScript Object Notation
+*[XML]: Extensible Markup Language
+*[ORM]: object-relation mapping
+*[SSG]: SQL Style Guide
+
 ## Overview
 
 This portion of the style guide should be treated as a supplement to the [Google Java Style Guide](https://google.github.io/styleguide/javaguide.html), (GJSG).
-
-*[GJSG]: Google Java Style Guide
 
 The GJSG is not reproduced here; instead, only amendments---additional constraints and relaxations or other changes to stated constraints---are listed below. Thus, a Java source file conforms to this style guide if (and only if) it conforms to the GJSG **and** the amendments stated below---except where the amendments contradict the constraints declared in the GJSG, in which cases the amendments below dictate the rules to be followed.
 

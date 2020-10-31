@@ -4,15 +4,19 @@ menu: SQL
 order: 20
 ---
 
-## Overview
-
 *[GJSG]: Google Java Style Guide
+*[JSON]: JavaScript Object Notation
+*[XML]: Extensible Markup Language
+*[ORM]: object-relation mapping
+*[SSG]: SQL Style Guide
+
+## Overview
 
 In SQL programming, there really isn't an equivalent to GJSG, or even to the earlier, more basic [Code Conventions for the Java&trade; Programming Language](https://www.oracle.com/java/technologies/javase/codeconventions-contents.html) (last updated by Sun in 1999, and currently made available for archive purposes by Oracle). Most of the rules included in both of those publications (which differ only in a few details, and in elements added to the Java language after the final revisions to the first) are followed by the overwhelming majority of Java developers; however, there isn't a SQL style guide with anything close to the same rate of formal adoption or informal conformance.
 
 In this style guide, the focus is primarily on naming (including casing), and on a few general formatting rules. Most of these are long-established, and widely followed---though with plenty of variation from organization to organization. One benefit of this flexibility is that many SQL formatters can be configured to apply several of these rules; this includes the **Code/Reformat code** feature of IntelliJ, which---when using the default settings---will apply all of the formatting rules (but not the structural or naming &amp; letter-casing rules) given here.
 
-This style guide is deliberately ORM-centric. That is, it is generally assumed that an ORM such as Hibernate or Room will be be managing persistence, and---in most cases---generating the SQL DDL code to implement the data model in a database schema. Thus, there is not much attention placed on formatting details for SQL statements; instead, naming and letter casing of keywords and identifiers are the main focus, with some secondary attention on formatting (primarily for the purpose of producing technical documentation).
+This style guide is deliberately oriented toward using SQL via an _object-relation mapping_ (ORM) library. That is, it's generally assumed that an ORM such as Hibernate or Room will be be managing persistence, and---in most cases---generating the SQL DDL code to implement the data model in a database schema. Thus, there is not much attention placed on formatting details for SQL statements; instead, naming and letter casing of keywords and identifiers are the main focus, with a secondary focus on formatting (primarily for the purpose of producing technical documentation).
 
 Some of the rules here are based on Simon Holywell's [SQL Style Guide](https://www.sqlstyle.guide/) (SSG). However, where the DDC Java style rules incorporate those in GJSG with only a few amendments, the DDC SQL style guide deviates significantly from SSG. Thus, the rules below should be treated as normative, without reference to similar or contradicting rules in the SSG. 
 

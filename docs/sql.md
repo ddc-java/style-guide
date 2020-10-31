@@ -18,13 +18,9 @@ On the other hand, beyond newline and indentation rules, this style guide doesn'
 
 ## Files
 
-### Filenames
-
 1. All SQL source code files **must be** named in `spinal-case`, with a `.sql` extension, _unless_ another naming convention is a requirement of a tool or library being used.
 
-### Structure
-
-1. If multiple SQL statements are included in a single `.sql` file, or in a string literal in a source code file of another type, the code in the file (or literal) **must be** executable as written, in order. Minimally, this implies:
+2. If multiple SQL statements are included in a single `.sql` file, or in a string literal in a source code file of another type, the code in the file (or literal) **must be** executable as written, in order. Minimally, this implies:
 
     1. Every statement **must be** terminated by a semicolon (`;`).
 

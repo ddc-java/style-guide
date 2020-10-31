@@ -18,7 +18,7 @@ On the other hand, beyond newline and indentation rules, this style guide doesn'
 
 ## Files
 
-### Naming
+### Filenames
 
 1. All SQL source code files **must be** named in `spinal-case`, with a `.sql` extension, _unless_ another naming convention is a requirement of a tool or library being used.
 

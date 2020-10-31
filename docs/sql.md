@@ -192,6 +192,7 @@ Many RDBMSs use sequences to implement auto-numbered (aka auto-incremented) fiel
         For a primary key, a value of this type **must be** stored and indexed as a 16-byte (128-bit) binary value; in some RDBMSs, this requires that we declare the actual type as `BINARY(16)`, `CHAR(16) FOR BIT DATA`, etc.
         
     * `BIGINT`
+    
     * `INT`
 
         For a primary key of either of the last 2 types above, the `UNSIGNED` modifier should be used if possible (not all RDBMS platforms support this).
@@ -394,7 +395,7 @@ The rules below _do not apply_ when a SQL statement expression is generated auto
     
 ### Table &amp; view aliases
 
-1. Table/view aliases **must be** used in multi-table `FROM` clauses---that is, in all join expressions.
+1. Table/view aliases **must be** used in multi-table `FROM` clauses---that is, in all join expressions---unless the table name is 5 characters or less in length.
 
 2. The `AS` keyword **must be** used when declaring an alias.
 

@@ -8,6 +8,8 @@ order: 10
 
 This portion of the style guide should be treated as a supplement to the [Google Java Style Guide](https://google.github.io/styleguide/javaguide.html), (GJSG).
 
+*[GJSG]: Google Java Style Guide
+
 The GJSG is not reproduced here; instead, only amendments---additional constraints and relaxations or other changes to stated constraints---are listed below. Thus, a Java source file conforms to this style guide if (and only if) it conforms to the GJSG **and** the amendments stated below---except where the amendments contradict the constraints declared in the GJSG, in which cases the amendments below dictate the rules to be followed.
 
 Numbered links below reference (and link to) the corresponding sections of the GJSG.
@@ -134,6 +136,8 @@ For this bootcamp, the above are further constrained:
     Similarly, while the `m` and `s` prefixes on non-`public`, non-`static` and `static` fields (respectively) are often seen in Java source code (including the Android library source code), these are also unnecessary, and _should be avoided._
 
 8. If a non-`static` field is intended to act as a primary key value of a persistent instance (e.g a field annotated with `@PrimaryKey` in an entity class), _prefer_ the simpler `id` to `{entity name}Id`.
+
+Note that there are a few long-standing exceptions to the naming & casing rules listed in GJSG and above. For example, `UUID` is a class in the Java standard ibrary, written as indicated in UPPERCASE; however, `uuid` (rather than `uUID`) is the correct way to use that initialism as a field or variable name.
 
 ## Programming practices
 

@@ -196,7 +196,7 @@ While we do not contradicting this exception entirely, we are qualifying it:
     Remember: Your documentation is likely to be read in an HTML page, without the reader having access to the implementation details of your class. Thus, a comment like
 
     ```java
-    /** Returns age. */`
+    /** Returns age. */
     ```
 
     may well be meaningless or of little value, especially if `age` is a `private` field. 

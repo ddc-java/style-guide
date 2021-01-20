@@ -4,3 +4,5 @@ description: Coding conventions for the Deep Dive Coding Java + Android Bootcamp
 author:
   name: Nick Bennett
   email: nick@nickbenn.com
+repository_link: 
+  enabled: true

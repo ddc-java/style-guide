@@ -6,13 +6,14 @@ order: 30
 
 *[GJSG]: Google Java Style Guide
 *[JSON]: JavaScript Object Notation
-*[XML]: eXtensible Markup Language
 *[ORM]: object-relation mapping
 *[SSG]: SQL Style Guide
+*[SQL]: Structured Query Language
+*[XML]: eXtensible Markup Language
 
 ## Overview
 
-Due to its essential simplicity and extensibility, XML plays a variety of roles in software development. Common uses of XML documents include---but are not limited to---these:
+Due to its essential simplicity and flexibility, _eXtensible Markup Language_ (XML) plays a variety of roles in software development. Common uses of XML documents include---but are not limited to---these:
 
 * Data interchange (this is the case for many web services---some using SOAP or other standard schemas, others using provider-specified schemas). 
 

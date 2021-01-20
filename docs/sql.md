@@ -6,13 +6,14 @@ order: 20
 
 *[GJSG]: Google Java Style Guide
 *[JSON]: JavaScript Object Notation
-*[XML]: eXtensible Markup Language
 *[ORM]: object-relation mapping
 *[SSG]: SQL Style Guide
+*[SQL]: Structured Query Language
+*[XML]: eXtensible Markup Language
 
 ## Overview
 
-In SQL programming, there really isn't an equivalent to GJSG, or even to the earlier, more basic [Code Conventions for the Java&trade; Programming Language](https://www.oracle.com/java/technologies/javase/codeconventions-contents.html) (last updated by Sun in 1999, and currently made available for archive purposes by Oracle). Most of the rules included in both of those publications (which differ only in a few details, and in elements added to the Java language after the final revisions to the first) are followed by the overwhelming majority of Java developers; however, there isn't a SQL style guide with anything close to the same rate of formal adoption or informal conformance.
+In _Structured Query Language_ (SQL) programming, there really isn't an equivalent to GJSG, or even to the earlier, more basic [Code Conventions for the Java&trade; Programming Language](https://www.oracle.com/java/technologies/javase/codeconventions-contents.html) (last updated by Sun in 1999, and currently made available for archive purposes by Oracle). Most of the rules included in both of those publications (which differ only in a few details, and in elements added to the Java language after the final revisions to the first) are followed by the overwhelming majority of Java developers; however, there isn't a SQL style guide with anything close to the same rate of formal adoption or informal conformance.
 
 In this style guide, the focus is primarily on naming (including casing), and on a few general formatting rules. Most of these are long-established, and widely followed---though with plenty of variation from organization to organization. One benefit of this flexibility is that many SQL formatters can be configured to apply several of these rules; this includes the **Code/Reformat code** feature of IntelliJ, which---when using the default settings---will apply all of the formatting rules (but not the structural or naming &amp; letter-casing rules) given here.
 

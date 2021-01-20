@@ -6,7 +6,7 @@ order: 30
 
 *[GJSG]: Google Java Style Guide
 *[JSON]: JavaScript Object Notation
-*[ORM]: object-relation mapping
+*[ORM]: object-relational mapping
 *[SSG]: SQL Style Guide
 *[SQL]: Structured Query Language
 *[XML]: eXtensible Markup Language

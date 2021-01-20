@@ -6,7 +6,7 @@ order: 20
 
 *[GJSG]: Google Java Style Guide
 *[JSON]: JavaScript Object Notation
-*[ORM]: object-relation mapping
+*[ORM]: object-relational mapping
 *[SSG]: SQL Style Guide
 *[SQL]: Structured Query Language
 *[XML]: eXtensible Markup Language
@@ -17,7 +17,7 @@ In _Structured Query Language_ (SQL) programming, there really isn't an equivale
 
 In this style guide, the focus is primarily on naming (including casing), and on a few general formatting rules. Most of these are long-established, and widely followed---though with plenty of variation from organization to organization. One benefit of this flexibility is that many SQL formatters can be configured to apply several of these rules; this includes the **Code/Reformat code** feature of IntelliJ, which---when using the default settings---will apply all of the formatting rules (but not the structural or naming &amp; letter-casing rules) given here.
 
-This style guide is deliberately oriented toward using SQL via an _object-relation mapping_ (ORM) library. That is, it's generally assumed that an ORM such as Hibernate or Room will be be managing persistence, and---in most cases---generating the SQL DDL code to implement the data model in a database schema. Thus, there is not much attention placed on formatting details for SQL statements; instead, naming and letter casing of keywords and identifiers are the main focus, with a secondary focus on formatting (primarily for the purpose of producing technical documentation).
+This style guide is deliberately oriented toward using SQL via an _object-relational mapping_ (ORM) library. That is, it's generally assumed that an ORM such as Hibernate or Room will be be managing persistence, and---in most cases---generating the SQL DDL code to implement the data model in a database schema. Thus, there is not much attention placed on formatting details for SQL statements; instead, naming and letter casing of keywords and identifiers are the main focus, with a secondary focus on formatting (primarily for the purpose of producing technical documentation).
 
 Some of the rules here are based on Simon Holywell's [SQL Style Guide](https://www.sqlstyle.guide/) (SSG). However, where the DDC Java style rules incorporate those in GJSG with only a few amendments, the DDC SQL style guide deviates significantly from SSG. Thus, the rules below should be treated as normative, without reference to similar or contradicting rules in the SSG. 
 

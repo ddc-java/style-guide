@@ -12,7 +12,7 @@ order: 40
 
 ## Overview
 
-In Java development, the applications of _JavaScript Object Notation_ (JSON) are similar to---though slightly more narrow in scope than--those of XML. It is most often used for data interchange (e.g. sending and receiving data to and from web services), but it can also be used for configuration files (e.g. as an alternative to YAML for an OpenAPI/Swagger service definition) and other purposes.
+In Java development, the applications of _JavaScript Object Notation_ (JSON) are similar to---though slightly more narrow in scope than---those of XML. It is most often used for data interchange (e.g. sending and receiving data to and from web services), but it can also be used for configuration files (e.g. as an alternative to YAML for an OpenAPI/Swagger service definition) and other purposes.
 
 Structurally, it can be useful to think of JSON as being analogous to XML---but without standard related facilities such as DTDs, schemas, XSL transforms, and XPath; with an anonymous root element; and combining the concepts of attributes and child elements into a single _property_ concept. (This may sound very limiting; it actually isn't as limiting as it might appear, and the benefit---a reduction in the verbosity that is a common pain point for XML users---often justifies it.)
 

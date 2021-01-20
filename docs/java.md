@@ -66,7 +66,7 @@ GJSG [4.6.1 Vertical whitespace](https://google.github.io/styleguide/javaguide.h
 
 We constrain the use of vertical whitespace further with these rules:
 
-1. Consecutive blank lines are _discouraged but permitted between members of a class,_ but the number of blank lies used **must be** consistent or predictable.
+1. Consecutive blank lines are _discouraged but permitted between members of a class,_ but the number of blank lines used **must be** consistent or predictable.
 
 3. Consecutive blank lines are **not permitted** _inside the body_ of an initializer, constructor, or method.
 

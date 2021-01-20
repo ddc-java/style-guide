@@ -4,6 +4,12 @@ menu: Resources
 order: 50
 ---
 
+*[GJSG]: Google Java Style Guide
+*[JSON]: JavaScript Object Notation
+*[XML]: eXtensible Markup Language
+*[ORM]: object-relation mapping
+*[SSG]: SQL Style Guide
+
 ## Style guides
 
 * [Code Conventions for the Java&trade; Programming Language](https://www.oracle.com/java/technologies/javase/codeconventions-contents.html) (<https://www.oracle.com/java/technologies/javase/codeconventions-contents.html>)

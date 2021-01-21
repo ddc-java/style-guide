@@ -27,6 +27,8 @@ order: 50
 
 * [Common Programming Case Styles]({{ "/assets/pdf/Casing.pdf" | relative_url }})
 
+    Introduction to letter casing styles most commonly used in coding, with notes on general and DDC-specific usage.
+
 ## Formatting tools
 
 ### Integrated

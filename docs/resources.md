@@ -25,6 +25,8 @@ order: 50
 
     Comprehensive guide, some portions have which have been incorporated into this style guide.
 
+* [Common Programming Case Styles]({{ "/assets/pdf/Casing.pdf" | relative_url }})
+
 ## Formatting tools
 
 ### Integrated

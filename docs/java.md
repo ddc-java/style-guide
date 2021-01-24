@@ -154,7 +154,7 @@ For this bootcamp, the above are further constrained:
 
 8. If a non-`static` field is intended to act as a primary key value of a persistent instance (e.g a field annotated with `@PrimaryKey` in an entity class), _prefer_ the simpler `id` to `{entity name}Id`.
 
-Note that there are a few long-standing exceptions to the naming & casing rules listed in GJSG and above. For example, `UUID` is a class in the Java standard ibrary, written as indicated in UPPERCASE; however, `uuid` (rather than `uUID`) is the correct way to use that initialism as a field or variable name.
+Note that there are a few long-standing exceptions to the naming & casing rules listed in GJSG and above. For example, `UUID` is a class in the Java standard ibrary, written as indicated in `UPPERCASE`; however, `uuid` (rather than `uUID`) is the correct way to use that initialism as a field or variable name.
 
 ## Programming practices
 

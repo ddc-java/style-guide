@@ -81,14 +81,17 @@ To the above, we add 2 strict rules:
 
 1. Though the compiler treats parentheses around a _single lambda parameter_ as optional, they are **required** in this bootcamp.
 
-2. If the conditional portion of a ternary expression contains 1 or more binary operators, the entire conditional portion **must be** enclosed in parentheses. For example, take the these 2 statements that include ternary expressions:
+2. If the conditional (Boolean) operand of a ternary expression contains 1 or more binary operators, _other than_ the `.` member access operator, the entire conditional operand **must be** enclosed in parentheses. For example, take the these 2 statements that include ternary expressions:
 
     ```java
     int a = (c >= 0) ? c : -c;
-    String s = !t.isEmpty() ? t : null;
     ```
     
-    In the first, the conditional expression includes the binary operator `>=`; thus, we enclose the entire conditional expression (`c >= 0`) in parentheses. In the second, while there are parentheses for the `isEmpty` method invocation, the only operators in the conditional expression are unary: `!` and `.`; thus, there is no need to enclose the entire conditional expression in parentheses.
+    ```java
+    String s = t.isEmpty() ? null : t;
+    ```
+    
+    In the first, the conditional operand includes the binary operator `>=`; thus, we enclose the entire conditional operand (`c >= 0`) in parentheses. In the second, while there are parentheses for the `isEmpty` method invocation, the only operator in the conditional operand is the member access operator `.`; thus, parentheses around the conditional operand are optional, but not required.
 
 ### `switch` statements
 

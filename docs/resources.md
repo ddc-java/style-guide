@@ -17,7 +17,7 @@ order: 50
     
     A respected (but no longer updated) style guide originally published by Sun, now made available by Oracle for archive purposes only. 
     
-* [Google Java Style Guides](https://google.github.io/styleguide/javaguide.html) (<https://google.github.io/styleguide/javaguide.html>)
+* [Google Java Style Guides](https://google.github.io/styleguide/) (<https://google.github.io/styleguide/>)
 
     This is the foundation for the Java portion of this style guide, as well as elements of the XML and JSON portions.
 
@@ -39,7 +39,7 @@ order: 50
 
 ### Online
 
-The tools listed here produce (with some configuration) formatted code that is fully conformant with the rules in this style guide. However, the recommended tool for this purpose is the IntelliJ IDEA **Code/Format Code** command.
+The tools listed here produce (with some configuration) code with formatting that's conformant with the rules in this style guide. However, the recommended tool for this purpose is the IntelliJ IDEA **Code/Format Code** command.
 
 #### SQL
 

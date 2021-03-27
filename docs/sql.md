@@ -4,13 +4,8 @@ menu: SQL
 order: 20
 ---
 
-*[GJSG]: Google Java Style Guide
-*[JSON]: JavaScript Object Notation
-*[ORM]: object-relational mapping
-*[SSG]: SQL Style Guide
-*[SQL]: Structured Query Language
-*[XML]: eXtensible Markup Language
-
+{% include ddc-abbreviations.md %}
+      
 ## Overview
 
 In _Structured Query Language_ (SQL) programming, there really isn't an equivalent to GJSG, or even to the earlier, more basic [Code Conventions for the Java&trade; Programming Language](https://www.oracle.com/java/technologies/javase/codeconventions-contents.html) (last updated by Sun in 1999, and currently made available for archive purposes by Oracle). Most of the rules included in both of those publications (which differ only in a few details, and in elements added to the Java language after the final revisions to the first) are followed by the overwhelming majority of Java developers; however, there isn't a SQL style guide with anything close to the same rate of formal adoption or informal conformance.

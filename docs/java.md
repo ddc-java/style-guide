@@ -4,13 +4,8 @@ menu: Java
 order: 10
 ---
 
-*[GJSG]: Google Java Style Guide
-*[JSON]: JavaScript Object Notation
-*[ORM]: object-relational mapping
-*[SSG]: SQL Style Guide
-*[SQL]: Structured Query Language
-*[XML]: eXtensible Markup Language
-
+{% include ddc-abbreviations.md %}
+      
 ## Overview
 
 This portion of the style guide should be treated as a supplement to the [Google Java Style Guide](https://google.github.io/styleguide/javaguide.html), (GJSG).
@@ -107,6 +102,20 @@ The above is further constrained: when a `default` is present (which, as noted, 
 
 GJSG [5 Naming](https://google.github.io/styleguide/javaguide.html#s5-naming) is normative, with the amendments below.
 
+GJSC [5.2.3 Method names](https://google.github.io/styleguide/javaguide.html#s5.2.3-method-names):
+
+> Method names are written in [`lowerCamelCase`](https://google.github.io/styleguide/javaguide.html#s5.3-camel-case).
+> 
+> Method names are typically verbs or verb phrases. For example, `sendMessage` or `stop`.
+> 
+> Underscores may appear in JUnit test method names to separate logical components of the name, with each component written in [`lowerCamelCase`](https://google.github.io/styleguide/javaguide.html#s5.3-camel-case). One typical pattern is **`<methodUnderTest>_<state>`**, for example `pop_emptyStack`. There is no One Correct Way to name test methods.
+
+Indeed, there is no One Correct Way to name test methods---or any method, for that matter. However, in this bootcamp, we add the following requirements:
+
+* Methods **must be** named using verbs or verb phrases, _except_ for methods without parameters that return simple properties of an object that are not directly settable (e.g. `size()`, `length()`).
+
+* Accessors and mutators must follow the JavaBeans naming conventions---that is, using `get` and `set` prefixes for non-boolean-valued properties, and `is` and `set` prefixes for boolean-valued properties.
+
 GJSC [5.2.5 Non-constant field names](https://google.github.io/styleguide/javaguide.html#s5.2.5-non-constant-field-names):
 
 > Non-constant field names (static or otherwise) are written in  [`lowerCamelCase`](https://google.github.io/styleguide/javaguide.html#s5.3-camel-case).
@@ -129,17 +138,19 @@ For this bootcamp, the above are further constrained:
 
 1. Parameter names **must** consist of 2 or more characters each, _except for lambda parameters_, which _may have_ single-character names. (If single-character names are used for lambda parameter names, the following naming rules don't apply).
 
-2. Field, parameter, and local variable names of _all_ scalar types (primitives, wrappers, `String`) _except_ `boolean` and `Boolean`, **must be** singular nouns or noun phrases.
+2. When constructing a `lowerCamelCase` name, _avoid_ names beginning with a single lowercase character, followed immediately by an uppercase character. Such names are easily mistyped, and can cause problems when tools generate setters and getters. For example, while the name of the OAuth authentication standard might naturally lead to a field name such as `oAuthKey`, `oauthKey` is preferred.
 
-3. `boolean` or `Boolean` fields, parameters, and local variables **must be** named using adjectives or adjective phrases.
+3. Field, parameter, and local variable names of _all_ scalar types (primitives, wrappers, `String`) _except_ `boolean` and `Boolean`, **must be** singular nouns or noun phrases.
 
-4. Fields, parameters, and local variables that are references to arrays and collections **must be** named with plural or collective nouns or noun phrases. For example, in a card game application, we may have a field (or several) of type `List<Card>`. Both `cards` and `deck` would be acceptable names for such a field: the former is a plural noun, and the latter is a collective noun.
+4. `boolean` or `Boolean` fields, parameters, and local variables **must be** named using adjectives or adjective phrases.
 
-5. **Do not** name `boolean` or `Boolean` fields with prefixes such as `is`, `are`, or `has`. (The `is` prefix is part of the JavaBeans specification for _accessor_ methods, not fields. Also, all of these prefixes make the field name a verb phrase, rather than an adjectival phrase.)
+5. Fields, parameters, and local variables that are references to arrays and collections **must be** named with plural or collective nouns or noun phrases. For example, in a card game application, we may have a field (or several) of type `List<Card>`. Both `cards` and `deck` would be acceptable names for such a field: the former is a plural noun, and the latter is a collective noun.
 
-6. **Do not** use [Hungarian notation](https://en.wikipedia.org/wiki/Hungarian_notation) for field, parameter, or local variable names. That is, do not prefix the name with type or role identifiers.
+6. **Do not** name `boolean` or `Boolean` fields with prefixes such as `is`, `are`, or `has`. (The `is` prefix is part of the JavaBeans specification for _accessor_ methods, not fields. Also, all of these prefixes make the field name a verb phrase, rather than an adjectival phrase.)
 
-7. _Avoid_ unnecessary suffixes on field, parameter, and local variable names. For example, _prefer_
+7. **Do not** use [Hungarian notation](https://en.wikipedia.org/wiki/Hungarian_notation) for field, parameter, or local variable names. That is, do not prefix the name with type or role identifiers.
+
+8. _Avoid_ unnecessary suffixes on field, parameter, and local variable names. For example, _prefer_
 
    ```java
    private Button update;
@@ -152,7 +163,7 @@ For this bootcamp, the above are further constrained:
 
     Similarly, while the `m` and `s` prefixes on non-`public`, non-`static` and `static` fields (respectively) are often seen in Java source code (including the Android library source code), these are also unnecessary, and _should be avoided._
 
-8. If a non-`static` field is intended to act as a primary key value of a persistent instance (e.g a field annotated with `@PrimaryKey` in an entity class), _prefer_ the simpler `id` to `{entity name}Id`.
+9. If a non-`static` field is intended to act as a primary key value of a persistent instance (e.g a field annotated with `@PrimaryKey` in an entity class), _prefer_ the simpler `id` to `{entity name}Id`.
 
 Note that there are a few long-standing exceptions to the naming & casing rules listed in GJSG and above. For example, `UUID` is a class in the Java standard ibrary, written as indicated in `UPPERCASE`; however, `uuid` (rather than `uUID`) is the correct way to use that initialism as a field or variable name.
 

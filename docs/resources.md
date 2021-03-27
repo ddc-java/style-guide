@@ -4,13 +4,8 @@ menu: Resources
 order: 50
 ---
 
-*[GJSG]: Google Java Style Guide
-*[JSON]: JavaScript Object Notation
-*[ORM]: object-relational mapping
-*[SSG]: SQL Style Guide
-*[SQL]: Structured Query Language
-*[XML]: eXtensible Markup Language
-
+{% include ddc-abbreviations.md %}
+      
 ## Style guides
 
 * [Code Conventions for the Java&trade; Programming Language](https://www.oracle.com/java/technologies/javase/codeconventions-contents.html) (<https://www.oracle.com/java/technologies/javase/codeconventions-contents.html>)
